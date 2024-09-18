@@ -1,7 +1,8 @@
 const MarketplaceV2 = artifacts.require("MarketplaceV2");
 const ITEM_STATE = {
-  Create: '0',
-  Paid: '1'
+  Created: '0',
+  Paid: '1',
+  Delivered: '2'
 }
 const toBN = web3.utils.toBN
 
@@ -35,7 +36,7 @@ contract('MarketplaceV2', async (accounts) => {
       "The owner is different"
     );
     assert.equal(
-      ITEM_STATE.Create,
+      ITEM_STATE.Created,
       item.state,
       "The state is different"
     );
