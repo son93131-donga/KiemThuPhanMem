@@ -65,3 +65,12 @@ npm start
 
 **Step 4:** Open web browser at http://localhost:8080
 
+
+
+
+chay bai:
+node1: npx truffle migrate --network geth
+node2: npm start
+node3: node server.js
+
+localStorage.clear();

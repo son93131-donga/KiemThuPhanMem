@@ -70,6 +70,12 @@ module.exports = {
      port: 7545,            // Standard Ethereum port (default: none)
      network_id: "5777",       // Any network (default: none)
     },
+
+    geth:{
+      host: "127.0.0.1",
+      port: 8511,
+      network_id: "2024",
+    },
     //
     // An additional network, but with some advanced options…
     // advanced: {
